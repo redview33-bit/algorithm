@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#282b35" />
+    <title>TOLOG | 로그인</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="login-page">
+      <div class="network network--top" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="network network--right" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="network network--bottom" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <section class="login-card" aria-labelledby="login-title">
+        <a class="brand" href="#" aria-label="TOLOG 홈"><span>T</span><span class="power-mark" aria-hidden="true"></span><span>LOG</span></a>
+        <p class="eyebrow">YOUR PERSONAL LOG SPACE</p>
+        <h1 id="login-title">다시 만나서 반가워요</h1>
+        <p class="subtitle">TOLOG에 로그인하고 기록을 이어가세요.</p>
+        <form id="login-form">
+          <label class="field"><span class="field-icon user-icon" aria-hidden="true"></span><span class="sr-only">이메일 또는 아이디</span><input name="email" type="text" autocomplete="username" placeholder="이메일 또는 아이디" required /></label>
+          <label class="field"><span class="field-icon lock-icon" aria-hidden="true"></span><span class="sr-only">비밀번호</span><input name="password" type="password" autocomplete="current-password" placeholder="비밀번호" required /></label>
+          <div class="options"><label class="remember"><input type="checkbox" name="remember" /><span>로그인 상태 유지</span></label><a href="#">비밀번호 찾기</a></div>
+          <button type="submit">로그인 <span aria-hidden="true">→</span></button>
+          <p class="signup">TOLOG가 처음이신가요? <a href="#">회원가입</a></p>
+          <p id="login-message" class="login-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+      <p class="copyright">© 2026 TOLOG. All rights reserved.</p>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
